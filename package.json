@@ -1,0 +1,41 @@
+{
+  "name": "alfred-timezones",
+  "version": "0.0.0",
+  "description": "Compare times for specified timezones. Great for coordinating meetings across more than two timezones.",
+  "license": "MIT",
+  "repository": "Chris-Nicol/alfred-timezones",
+  "author": {
+    "name": "Chris Nicol",
+    "email": "irish.cn@gmail.com",
+    "url": "chrisnicol.me"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy"
+  ],
+  "dependencies": {
+    "alfy": "^0.6.0",
+    "countries-and-timezones": "^1.0.1",
+    "moment-timezone": "^0.5.23",
+    "timezone-list": "^0.2.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.18.0",
+    "xo": "^0.17.0"
+  }
+}
